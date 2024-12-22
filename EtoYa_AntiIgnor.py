@@ -2,7 +2,7 @@ from telethon import TelegramClient, errors, types
 from telethon.tl.functions.messages import SendReactionRequest
 import asyncio
 
-#реклама - https://t.me/+nwD-SFfQG3U1ODMy (канал создателя бота)
+#реклама - https://t.me/+Gf1TENQ5DAIyYmUy (канал создателя бота)
 #Введите свои данные через input или удалите input и введите их вручную
 api_id = input("Введите api_id: ")
 api_hash = input("Введите api_hash: ")
@@ -72,7 +72,7 @@ async def send_reactions_by_keyword(chat_id, reaction, keyword):
 async def main():
     try:
         await client.start()
-        print("реклама - https://t.me/+nwD-SFfQG3U1ODMy (канал создателя бота)")
+        print("реклама - https://t.me/+Gf1TENQ5DAIyYmUy (канал создателя бота)")
     except errors.RPCError as e:
         print(f"Ошибка при подключении: {e}")
         return
@@ -92,7 +92,7 @@ async def main():
     print("1 - Отправка сообщений")
     print("2 - Установка реакций")
     print("3 - Комбинированный режим")
-    print("реклама - https://t.me/+nwD-SFfQG3U1ODMy (канал создателя бота)")
+    print("реклама - https://t.me/+Gf1TENQ5DAIyYmUy (канал создателя бота)")
     mode = input("Введите номер режима: ")
 
     tasks = []
@@ -103,7 +103,7 @@ async def main():
         print("2 - Отправка определенного количества сообщений")
         print("3 - Отправка сообщения в ответ на другое сообщение, содержащее выбранное слово")
         print("4 - Спам без остановки")
-        print("реклама - https://t.me/+nwD-SFfQG3U1ODMy (канал создателя бота)")
+        print("реклама - https://t.me/+Gf1TENQ5DAIyYmUy (канал создателя бота)")
         m = input("Введите номер режима: ")
 
         if m == '1':
@@ -150,7 +150,7 @@ async def main():
         print("Выберите режим:")
         print("1 - По ID пользователя или все сообщения")
         print("2 - По ключевому слову")
-        print("реклама - https://t.me/+nwD-SFfQG3U1ODMy (канал создателя бота)")
+        print("реклама - https://t.me/+Gf1TENQ5DAIyYmUy (канал создателя бота)")
         rm = input("Введите номер режима: ")
 
         if rm == '1':
@@ -163,7 +163,7 @@ async def main():
 
     await asyncio.gather(*tasks)
 
-#реклама - https://t.me/+nwD-SFfQG3U1ODMy (канал создателя бота)
+#реклама - https://t.me/+Gf1TENQ5DAIyYmUy (канал создателя бота)
 try:
     with client:
         client.loop.run_until_complete(main())
